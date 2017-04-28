@@ -1,0 +1,121 @@
+@import "colors";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap-sprockets.scss";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+body {
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    -ms-overflow-style: scrollbar;
+}
+h1,h2 {
+    text-transform: uppercase;
+}
+h1,h2,h3,h4,h5 {
+    color:$gray;
+}
+
+// Buttons
+.btn {
+    font-family: Roboto, "Open Sans", Helvetica, sans-serif;
+    font-size:14px;
+    /*padding: 10px 24px;*/
+    /*padding:6px 12px;*/
+    font-weight: 400;
+    /*letter-spacing: .1em;*/
+    /*text-transform: uppercase;*/
+    &.topmargin {
+        margin:20px 0;
+    }
+    &.bottommargin {
+        margin:0 0 20px 0;
+    }
+    &.margins {
+        margin:20px 0;
+    }
+    &.btn-lg {
+        padding: 10px 24px;
+    }
+    &.disabled:hover,
+    &.disabled:focus,
+    &.disabled {
+        border-color:$gray-dark;
+        background-color:$gray;
+    }
+    .glyphicon {
+        top:2px;
+    }
+}
+
+// this tweaks the speed, and somehow makes the caret bug less visible
+.modal.fade {
+    transition:opacity .3s linear;
+}
+
+
+#spinner{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index:99 !important;
+}
+// Layout
+p {
+    line-height:30px;
+    font-family:inherit;
+    font-size:$font-size-base;
+    font-weight:400;
+    margin:0 0 12px;
+    text-rendering:optimizeLegibility;
+}
+// add this to .row to collapse columns within
+.row.no-gutters {
+    margin-left:0;
+    margin-right:0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+    padding-right:0;
+    padding-left:0;
+}
+.modal-content .row.no-gutters {
+    margin-left:-20px;
+    margin-right:-20px;
+}
+.col-lg-2-5 {
+    position:relative;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+    float:left;
+    width:20%;
+}
+.col-lg-9-5 {
+    position:relative;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+    float:left;
+    width:80%;
+
+}
+// form elements
+select {
+    outline:none;
+}
+
+// media queries
+@media (max-width: $screen-md-max) {
+}
+
+@media (max-width: $screen-sm-max) {
+}
+
+@media (max-width: $screen-xs-max) {
+}
+@media (max-width: 420px) {
+}
+

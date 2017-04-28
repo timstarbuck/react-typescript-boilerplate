@@ -1,0 +1,9 @@
+// monochromatic
+$gray-base:              #000;
+$gray-darker:            lighten($gray-base, 13.5%);
+$gray-dark:              lighten($gray-base, 33.5%);
+$gray:                   lighten($gray-base, 44.4%);
+$gray-light:             lighten($gray-base, 75.5%);
+$gray-lighter:           lighten($gray-base, 93.5%);
+$gray-lighter-alt:       lighten($gray-base, 96%);
+
